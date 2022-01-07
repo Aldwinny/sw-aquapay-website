@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/Aquapay_Logo.svg" />
     <link rel="stylesheet" href="/style/general.css" />
     <link rel="stylesheet" href="/style/payment.css" />
     
@@ -36,8 +37,8 @@
                     Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarServices">
-                    <li><a class="dropdown-item menu-dropdown-item" href="payment.html">Pay Now</a></li>
-                    <li><a class="dropdown-item menu-dropdown-item" href="#">Service 2</a></li>
+                    <li><a class="dropdown-item" href="payment.html">Pay Now</a></li>
+                    <li><a class="dropdown-item" href="#">Service 2</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -58,10 +59,16 @@
             <div class="box-l">
                 <div class="history">
                     <h3>Payment History</h3>
+                    <hr>
+                    <button class="btn btn-primary">Get Billing Statement</button>
                 </div>
             </div>
             <div class="box-r">
-                <div class="payment">
+                <div class="payment d-flex flex-column align-items-center">
+                    <h3>Total Amount Due</h3>
+                    <img src="assets\graphics\water-droplet.svg" class="droplet" alt="Water droplet">
+                    <h3>₱950.00</h3>
+                    <button class="btn btn-primary">Pay Now</button>
                 </div>
             </div>
         </div>
