@@ -1,0 +1,34 @@
+@import url("variables.css");
+
+* {
+    font-family: var(--default-font);
+    box-sizing: border-box;
+}
+
+body {
+    color: #222;
+}
+
+
+/* Navigation */
+
+nav {
+    background: linear-gradient(to right, var(--blue), var(--teal));
+}
+
+a.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+a.navbar-brand {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.navbar-brand img {
+    margin-right: 1vw;
+    min-height: 80px;
+    height: 5vw;
+}
+
