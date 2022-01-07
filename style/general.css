@@ -6,7 +6,7 @@
 }
 
 body {
-    color: #222;
+    font-weight: 300;
 }
 
 
@@ -16,19 +16,29 @@ nav {
     background: linear-gradient(to right, var(--blue), var(--teal));
 }
 
-a.navbar-brand,
-.nav-link {
-    color: #fff !important;
-}
-
 a.navbar-brand {
     font-size: 2em;
     font-weight: 700;
 }
 
-.navbar-brand img {
-    margin-right: 1vw;
+.navbar-brand > img {
+    margin-right: 0.5em;
     min-height: 80px;
     height: 5vw;
 }
 
+a.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-item:not(:last-of-type) {
+    margin-right: 1.5em;
+}
+
+.nav-link > i {
+    padding: 6px;
+    background: #fff;
+    color: var(--teal);
+    border-radius: 50px;
+}
