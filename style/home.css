@@ -1,6 +1,7 @@
 @import url("variables.css");
 
 body {
+  transition-duration: 100ms;
   background: linear-gradient(to right, var(--blue), var(--teal));
 }
 
@@ -23,8 +24,8 @@ header {
   height: 70vh;
 }
 
-.head-content :not(img) {
-  margin: 5%;
+.head-content > :not(img) {
+  padding: 5%;
 }
 
 header p {
