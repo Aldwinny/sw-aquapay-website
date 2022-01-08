@@ -11,11 +11,19 @@ body {
   width: clamp(25vh, 25vw, 25em);
 }
 
-header > div {
-  height: 60vh;
+nav {
+  background: none;
 }
 
-header div:last-child {
+header {
+  margin-top: 1%;
+}
+
+.head-content {
+  height: 70vh;
+}
+
+.head-content :not(img) {
   margin: 5%;
 }
 
@@ -55,7 +63,7 @@ header a:active {
 }
 
 @media only screen and (max-width: 700px) {
-  header div {
+  header .head-content {
     text-align: center;
   }
 }
