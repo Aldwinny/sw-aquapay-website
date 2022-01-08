@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-    
-    --default-font: 'Inter', sans-serif;
+  --default-font: "Inter", sans-serif;
 
-    --blue: #0b7fb5;
-    --teal: #1c8184;
-    --cyan: #5ce7ec;
+  --blue: #0b7fb5;
+  --teal: #1c8184;
+  --cyan: #5ce7ec;
 
+  --btn-active-cyan: #4bbbbb;
+  --btn-hover-cyan: #62f0f0;
 }
