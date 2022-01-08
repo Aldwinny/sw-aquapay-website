@@ -1,7 +1,9 @@
 // Script will assume that the image/background is equal to the carousel item
 
 const news = [];
-let backgrounds = ["assets/dam1.jpg"];
+let backgrounds = [
+  "https://i.pinimg.com/564x/31/a2/5b/31a25b8bd1e8b58915c30f68f4ef8782.jpg",
+];
 
 function preload() {
   for (let i = 0; i < backgrounds.length; i++) {
@@ -19,7 +21,7 @@ function changeBackground(adjustment) {
       break;
     case 1:
       body.transitionDuration = "0ms";
-      body.background = `url('${backgrounds[0]}') center`;
+      body.background = `url('${backgrounds[0]}')`;
       body.backgroundSize = "cover";
       break;
     default:
