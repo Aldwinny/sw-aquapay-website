@@ -1,0 +1,84 @@
+body {
+    background: rgb(73, 73, 73) !important;
+}
+
+.container {
+    background: #fff;
+    width: 60vw !important;
+    padding: 1.5em 1.7em !important;
+    box-shadow: 0 0 20px #292929;
+}
+
+
+/* Header */
+
+header {
+    background: gray;
+}
+
+.aquapay img {
+    width: 5em;
+}
+
+
+/* Statement of Account */
+
+h5 {
+    margin-bottom: 1.2em !important;
+    font-weight: 700 !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table {
+    border-color: #222;
+}
+table:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+th {
+    font-weight: 600 !important;
+    text-align: center !important;
+}
+
+td,
+.soa th {
+    padding: 5px 7px;
+}
+
+.user-info {
+    padding: 1em 1.2em;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name,
+.address {
+    text-transform: uppercase;
+}
+
+.soa {
+    width: fit-content;
+    margin: 1.5em auto 0;
+}
+
+.soa th {
+    text-align: left !important;
+}
+
+.soa td {
+    padding: 0 7px;
+}
+
+.soa tr > td:nth-of-type(2),
+.soa tr > td:nth-of-type(3),
+.soa tr > td:nth-of-type(4) {
+    text-align: right !important;
+}
+
+.equal {
+    border-top: 2px solid #222;
+}
