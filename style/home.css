@@ -1,0 +1,41 @@
+@import url("variables.css");
+
+body {
+  background: linear-gradient(to right, var(--blue), var(--teal));
+}
+
+.home-image {
+  min-width: 25vh;
+  max-width: 25em;
+  width: 25vw; /* Fallback */
+  width: clamp(25vh, 25vw, 25em);
+}
+
+header > div {
+  height: 60vh;
+}
+
+header div:last-child {
+  margin: 5%;
+}
+
+header p {
+  color: #fff !important;
+  font-size: 2.7em; /* Fallback */
+  font-size: clamp(1.5em, 3vw, 2.7em);
+}
+
+header button {
+  color: var(--blue);
+  background-color: var(--cyan);
+  font-weight: 700;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  header div {
+    text-align: center;
+  }
+}
