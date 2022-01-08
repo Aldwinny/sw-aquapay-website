@@ -1,0 +1,60 @@
+@import url("variables.css");
+
+* {
+    font-family: var(--default-font);
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 300;
+}
+
+
+/* Navigation */
+
+nav {
+    background: linear-gradient(to right, var(--blue), var(--teal));
+}
+
+a.navbar-brand {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.navbar-brand > img {
+    margin-right: 0.5em;
+    min-height: 80px;
+    height: 5vw;
+}
+
+a.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-item:not(:last-of-type) {
+    margin-right: 1.5em;
+}
+
+.nav-link > i {
+    padding: 6px;
+    background: #fff;
+    color: var(--teal);
+    border-radius: 50px;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+    border-radius: 0.5em !important;
+}
+
+.dropdown-menu li:first-of-type a {
+    border-radius: 0.5em 0.5em 0 0 !important;
+}
+.dropdown-menu li:last-of-type a {
+    border-radius: 0 0 0.5em 0.5em !important;
+}
+
+a.dropdown-item {
+    padding: 10em auto !important;
+}
