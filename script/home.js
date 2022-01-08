@@ -2,8 +2,8 @@
 
 const news = [];
 let backgrounds = [
-  "https://i.pinimg.com/564x/31/a2/5b/31a25b8bd1e8b58915c30f68f4ef8782.jpg",
-  "https://i.pinimg.com/564x/36/4c/d0/364cd0ee37553e8dd2468eb184c23427.jpg",
+  "/assets/bg-images/dam1.jpg",
+  "/assets/bg-images/Water1.jpg",
 ];
 
 function preload() {
