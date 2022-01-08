@@ -19,6 +19,7 @@ nav {
 a.navbar-brand {
     font-size: 2em;
     font-weight: 700;
+    margin-left: 2em;
 }
 
 .navbar-brand > img {
@@ -55,6 +56,27 @@ a.navbar-brand,
     border-radius: 0 0 0.5em 0.5em !important;
 }
 
-a.dropdown-item {
-    padding: 10em auto !important;
+.dropdown-item {
+    padding: 0.5em 1em !important;
+}
+
+
+/* Buttons */
+
+.blue-btn, .blue-btn:hover, .blue-btn:active {
+    transition: 0.1s;
+}
+
+.blue-btn {
+    padding: 0.6em 0.8em;
+    background: var(--blue);
+    color: #fff;
+    border: 0;
+    border-radius: 0.5em;
+}
+.blue-btn:hover {
+    background: var(--btn-hover-blue);
+}
+.blue-btn:active {
+    background: var(--btn-active-blue);
 }
