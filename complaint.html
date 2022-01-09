@@ -25,67 +25,92 @@
     <title>AquaPay | Home</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="ms-auto">
-            <a href="index.html" class="navbar-brand">
-                <img src="/assets/Aquapay_Logo.svg" alt="Logo" />
-                AquaPay
-            </a>
-        </div>
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item dropdown">
-                <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarServices"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >
-                Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarServices">
-                <li><a class="dropdown-item" href="payment.html">Pay Now</a></li>
-                <li><a class="dropdown-item" href="complaint.html">Service 2</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="/assets/Aquapay_Logo.svg" alt="Logo" />
+            <div class="d-flex flex-column website-name">
+                <span class="title">AquaPay</span>
+                <span class="subtitle">For Water Wonderland</span>
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarServices">
+                        <li><a class="dropdown-item" href="b-statement.html" target="_blank" rel="noopener noreferrer">Get SOA</a></li>
+                        <li><a class="dropdown-item" href="payment.html">Pay Now</a></li>
+                        <li><a class="dropdown-item" href="complaint.html">File Concerns</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    </ul>
-    <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="ri-user-3-line"></i>
-            </a>
-        </li>
-    </ul>
-</nav>
-
-<div class="container-fluid">
-    <div class="bg-img">
-        <img src="/assets/bg-images/bottom-right-circles.svg">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown user-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-user-3-line"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarUser">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <div class="bg-img">
+            <img src="/assets/bg-images/bottom-right-circles.svg">
+        </div>
+        <form class="form">
+            <h3 class="feature-title">Customer Concern</h3>
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="First Name" name="">
+                    <input type="text" class="form-control" placeholder="Last Name" name="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <div class="input-group"></div>
+                <input type="email" class="form-control" placeholder="Enter Email Address" name="email">
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" placeholder="Enter Address" name="address">
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="City" name="city">
+                <input type="text" class="form-control" placeholder="Province" name="province">
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Region" name="region">
+                <input type="text" class="form-control" placeholder="Zip Code" name="zip_code">
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="State your complaint or concern"></textarea>
+            </div>
+            <input type="submit" class="blue-btn" value="Submit" name="">
+        </form>
     </div>
-    <div class="form">
-        <h3 class="feature-title">CUSTOMER COMPLAINT</h3>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Name" name="">
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email Address" name="email">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-        </div>
-        <input type="submit" class="blue-btn" value="Submit" name="">
-    </div>
-</div>
-
-<!-- Bootstrap Bundle -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"
-></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap Bundle -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

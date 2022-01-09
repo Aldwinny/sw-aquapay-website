@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/Aquapay_Logo.svg" />
     <link rel="stylesheet" href="/style/general.css" />
-    <link rel="stylesheet" href="/style/payment.css" />
     <link rel="stylesheet" href="/style/about.css" />
     <!-- Bootstrap CSS -->
     <link
@@ -21,41 +20,45 @@
     <title>AquaPay | About Us</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="ms-auto">
-          <a href="index.html" class="navbar-brand">
-            <img src="/assets/Aquapay_Logo.svg" alt="Logo" />
-            AquaPay
-          </a>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img src="/assets/Aquapay_Logo.svg" alt="Logo" />
+        <div class="d-flex flex-column website-name">
+            <span class="title">AquaPay</span>
+            <span class="subtitle">For Water Wonderland</span>
         </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarServices"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarServices">
-              <li><a class="dropdown-item" href="payment.html">Pay Now</a></li>
-              <li><a class="dropdown-item" href="#">Service 2</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarServices">
+                    <li><a class="dropdown-item" href="b-statement.html" target="_blank" rel="noopener noreferrer">Get SOA</a></li>
+                    <li><a class="dropdown-item" href="payment.html">Pay Now</a></li>
+                    <li><a class="dropdown-item" href="complaint.html">File Concerns</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
         <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ri-user-3-line"></i>
-            </a>
-          </li>
+            <li class="nav-item dropdown user-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarUser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ri-user-3-line"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarUser">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                </ul>
+            </li>
         </ul>
-      </nav>
+    </div>
+</nav>
   
     </div>
     <section class="showcase">
