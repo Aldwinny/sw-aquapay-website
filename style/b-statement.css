@@ -4,7 +4,7 @@ body {
 
 .container {
     background: #fff;
-    width: 60vw !important;
+    width: 70vw !important;
     padding: 1.5em 1.7em !important;
     box-shadow: 0 0 20px #292929;
 }
@@ -61,7 +61,7 @@ td,
 }
 
 .soa {
-    width: fit-content;
+    width: 50vw;
     margin: 1.5em auto 0;
 }
 

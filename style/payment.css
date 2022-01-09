@@ -1,7 +1,3 @@
-body {
-    background: linear-gradient(to right, var(--blue), var(--teal));
-}
-
 .box-l {
     width: 25%;
     padding: 1em 0.5em 1em 1em;
