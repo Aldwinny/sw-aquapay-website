@@ -1,6 +1,5 @@
 // Script will assume that the image/background is equal to the carousel item
 
-const news = [];
 let backgrounds = [
   "/assets/bg-images/dam1.jpg",
   "/assets/bg-images/Water1.jpg",
@@ -15,25 +14,16 @@ function preload() {
 
 function changeBackground(adjustment) {
   let body = document.body.style;
-  let nav = document.querySelector("nav");
-  let text = document.querySelectorAll("p, a");
   switch (activeIndex(adjustment)) {
     case 0:
-      body.transitionDuration = "";
       body.background = "";
 
       break;
     case 1:
-      body.transitionDuration = "0ms";
       body.background = `url('${backgrounds[0]}')`;
       body.backgroundSize = "100% 100vh";
       break;
-    case 2:
-      body.background = `url('${backgrounds[1]}')`;
-      body.backgroundSize = "cover";
-      break;
     default:
-      body.transitionDuration = "";
       body.background = "";
   }
 }

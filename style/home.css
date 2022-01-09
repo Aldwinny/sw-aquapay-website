@@ -82,12 +82,16 @@ div.article {
   color: #fff;
 }
 
+h1,
+h3 {
+  text-shadow: 2px 2px 4px #000;
+}
+
 h1.header-title {
   text-align: center;
   font-weight: 700;
   padding: 0;
-  margin-bottom: 50px;
-  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 40px;
   font-size: 3.5em; /* Fallback */
   font-size: clamp(1.5em, 4vw, 3.5em);
 }
