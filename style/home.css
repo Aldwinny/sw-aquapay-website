@@ -13,7 +13,12 @@ body {
 }
 
 nav {
-  background: none;
+  background: transparent;
+}
+
+nav.hasimage {
+  background: rgba(0, 0, 0, 0.5) !important;
+  padding-bottom: 10px !important;
 }
 
 header {
@@ -67,4 +72,36 @@ header a:active {
   header .head-content {
     text-align: center;
   }
+}
+
+div.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 20px;
+  color: #fff;
+}
+
+h1,
+h3 {
+  text-shadow: 2px 2px 4px #000;
+}
+
+h1.header-title {
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 3.5em; /* Fallback */
+  font-size: clamp(1.5em, 4vw, 3.5em);
+}
+
+h3.header-description {
+  text-align: center;
+  padding: 0;
+  margin: 0 11vw;
+  font-weight: 100;
+  font-size: 1em; /* Fallback */
+  font-size: clamp(0.5em, 3vw, 1.2em);
 }
