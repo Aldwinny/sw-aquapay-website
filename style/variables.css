@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url(//db.onlinewebfonts.com/c/3724259186746d86859fbb0fde0fa44a?family=Druk+Text+Wide+Web+Medium);
 
 :root {
   --default-font: "Inter", sans-serif;
+  --water-wonderland: "Druk Text Wide Web Medium";
 
   --blue: #0b7fb5;
   --teal: #1c8184;
