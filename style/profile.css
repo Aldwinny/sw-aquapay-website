@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(to right, var(--blue), var(--teal));
+}
+
+.box-l {
+    position: fixed;
+    width: 75%;
+    padding: 1em 0.5em 1em 1em;
+    z-index: 1;
+}
+
+.box-r {
+    position: relative;
+    left: 25%;
+    width: calc(100% - 25%);
+    padding: 1em 1em 1em 0.5em;
+}
+
+.card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    background-color: whitesmoke;
+    border-radius: 0.5em;
+}
+
+.droplet {
+    display: block;
+    width: 3em;
+    margin: 1em;
+}
