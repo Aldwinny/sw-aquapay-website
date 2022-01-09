@@ -18,10 +18,10 @@ nav {
 }
 
 a.navbar-brand {
-    margin-left: 5.5em;
+    margin-left: 6.5em;
 }
 
-.website-name {
+nav .website-name {
     line-height: 1.3em;
 }
 
@@ -77,6 +77,17 @@ a.navbar-brand,
     padding: 0.5em 1em !important;
 }
 
+.dropdown-menu-center {
+    left: 35%;
+    -webkit-transform: translateX(-35%);
+    -o-transform: translateX(-35%);
+    transform: translateX(-35%);
+}
+
+.user-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
 
 /* Headings */
 
@@ -103,4 +114,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blue-btn:active {
     background: var(--btn-active-blue);
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--cyan);
+    margin-top: 1em;
+    padding: 1em 3.5em 1.1em;
+}
+
+footer img {
+    display: block;
+    width: 3em;
+    margin-right: 1em;
+}
+
+footer .website-name {
+    padding-top: 12px;
+    font-weight: 700;
+    color: #0b2251;
+}
+
+footer .website-name span {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #0b2251de;
+}
+
+footer .copyright {
+    font-size: 0.85em;
 }
