@@ -28,13 +28,20 @@ h4 {
     padding: 1em;
 }
 
-.history > *:not(:last-child) {
-    padding-bottom: 0.5em;
+.table-wrapper {
+    max-height: 72.35vh;
+    margin: 1em 0 0.5em;
+    overflow: auto;
 }
 
 table {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
+}
+
+.history a {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -50,11 +57,11 @@ table {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
     background: rgba(255, 255, 255, 0.8);
     padding: 1.5em;
     border-radius: 0.5em;
-
+    
     transition: 0.1s;
 }
 .content:hover {
@@ -78,4 +85,64 @@ table {
 
 .due-date {
     border-bottom: 1px solid var(--blue);
+}
+
+
+/*--- Responsive ---*/
+
+@media only screen and (max-width: 1024px) {
+    
+    .box-wrapper {
+        flex-direction: column-reverse;
+    }
+    
+    .box-l,
+    .box-r {
+        width: 100%;
+    }
+    
+    .box-l {
+        padding: 0.5em 1em 1em;
+    }
+    
+    .box-r {
+        padding: 1em 1em 0.5em;
+    }
+
+    .content {
+        background: #fff;
+    }
+    
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .box-r {
+        position: static;
+    }
+    
+    h4 {
+        letter-spacing: 0.5px;
+    }
+    
+    .table-wrapper {
+        max-height: 40vh;
+    }
+    
+    table {
+        font-size: 0.95em;
+    }
+    
+    .bg-img {
+        position: static;
+        display: none;
+    }
+    
+    .content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+    
 }
