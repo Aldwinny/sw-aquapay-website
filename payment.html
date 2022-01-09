@@ -24,7 +24,7 @@
 <body>
     
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="nav">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <img src="/assets/Aquapay_Logo.svg" alt="Logo" />
             <div class="d-flex flex-column website-name">
@@ -58,6 +58,8 @@
                     <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarUser">
                         <li><a class="dropdown-item" href="login.html">Login</a></li>
                         <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Settings</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="#">Log Out</a></li> -->
                     </ul>
                 </li>
             </ul>
@@ -66,43 +68,46 @@
     
     <!-- Main Content -->
     <main>
-        <div class="d-flex flex-wrap">
+        <div class="box-wrapper d-flex flex-wrap">
             <div class="box-l">
-                <div class="history d-flex flex-column align-items-center">
+                <div class="history">
                     <h4>Payment History</h4>
                     
-                    <table class="table table-striped table-responsive">
-                        <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Amount Due</th>
-                            <th scope="col">Amount Paid</th>
-                        </tr>
-                        <tr>
-                            <td>12-21-2021</td>
-                            <td>₱650.00</td>
-                            <td>₱650.00</td>
-                        </tr>
-                        <tr>
-                            <td>12-21-2021</td>
-                            <td>₱650.00</td>
-                            <td>₱650.00</td>
-                        </tr>
-                        <tr>
-                            <td>12-21-2021</td>
-                            <td>₱650.00</td>
-                            <td>₱650.00</td>
-                        </tr>
-                        <tr>
-                            <td>12-21-2021</td>
-                            <td>₱650.00</td>
-                            <td>₱650.00</td>
-                        </tr>
-                        <tr>
-                            <td>12-21-2021</td>
-                            <td>₱650.00</td>
-                            <td>₱650.00</td>
-                        </tr>
-                    </table>
+                    <div class="table-wrapper table-responsive">
+                        <table class="table table-striped">
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Amount Due</th>
+                                <th scope="col">Amount Paid</th>
+                            </tr>
+                            <tr>
+                                <td>12-21-2021</td>
+                                <td>₱650.00</td>
+                                <td>₱650.00</td>
+                            </tr>
+                            <tr>
+                                <td>12-21-2021</td>
+                                <td>₱650.00</td>
+                                <td>₱650.00</td>
+                            </tr>
+                            <tr>
+                                <td>12-21-2021</td>
+                                <td>₱650.00</td>
+                                <td>₱650.00</td>
+                            </tr>
+                            <tr>
+                                <td>12-21-2021</td>
+                                <td>₱650.00</td>
+                                <td>₱650.00</td>
+                            </tr>
+                            <tr>
+                                <td>12-21-2021</td>
+                                <td>₱650.00</td>
+                                <td>₱650.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
                     <a href="b-statement.html" target="_blank" rel="noopener noreferrer">
                         <button class="blue-btn">Get Statement of Account</button>
                     </a>
@@ -118,7 +123,9 @@
                         <img src="assets/graphics/water-droplet.svg" class="droplet" alt="Water droplet">
                         <h1>₱950.00</h1>
                         <p>Due Date: <span class="due-date">01-15-2022</span></p>
-                        <button class="blue-btn">Pay Now</button>
+                        <a href="pay-now.html">
+                            <button class="blue-btn">Pay Now</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -144,5 +151,8 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/script/general.js"></script>
 </body>
 </html>
