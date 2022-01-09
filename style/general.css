@@ -7,6 +7,7 @@
 
 body {
     font-weight: 300;
+    background: linear-gradient(to right, var(--blue), var(--teal));
 }
 
 
@@ -17,9 +18,25 @@ nav {
 }
 
 a.navbar-brand {
+    margin-left: 6.5em;
+}
+
+nav .website-name {
+    line-height: 1.3em;
+}
+
+.title {
+    margin-top: 15px;
     font-size: 2em;
     font-weight: 700;
-    margin-left: 2em;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.7em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .navbar-brand > img {
@@ -60,6 +77,24 @@ a.navbar-brand,
     padding: 0.5em 1em !important;
 }
 
+.dropdown-menu-center {
+    left: 35%;
+    -webkit-transform: translateX(-35%);
+    -o-transform: translateX(-35%);
+    transform: translateX(-35%);
+}
+
+.user-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
 
 /* Buttons */
 
@@ -79,4 +114,35 @@ a.navbar-brand,
 }
 .blue-btn:active {
     background: var(--btn-active-blue);
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--cyan);
+    margin-top: 1em;
+    padding: 1em 3.5em 1.1em;
+}
+
+footer img {
+    display: block;
+    width: 3em;
+    margin-right: 1em;
+}
+
+footer .website-name {
+    padding-top: 12px;
+    font-weight: 700;
+    color: #0b2251;
+}
+
+footer .website-name span {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #0b2251de;
+}
+
+footer .copyright {
+    font-size: 0.85em;
 }
