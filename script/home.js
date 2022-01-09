@@ -15,15 +15,18 @@ function preload() {
 
 function changeBackground(adjustment) {
   let body = document.body.style;
+  let nav = document.querySelector("nav");
+  let text = document.querySelectorAll("p, a");
   switch (activeIndex(adjustment)) {
     case 0:
       body.transitionDuration = "";
       body.background = "";
+
       break;
     case 1:
       body.transitionDuration = "0ms";
       body.background = `url('${backgrounds[0]}')`;
-      body.backgroundSize = "cover";
+      body.backgroundSize = "100% 100vh";
       break;
     case 2:
       body.background = `url('${backgrounds[1]}')`;
