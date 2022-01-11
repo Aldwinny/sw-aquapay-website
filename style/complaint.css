@@ -1,36 +1,41 @@
-.bg-img img {
-    position: relative;
-    left: 100%;
-    transform: translateX(-100%)
-}
 .form {
-    position: absolute;
-    top: 50%;
-    left: 7em;
-    transform: translateY(-50%);
+  margin: 3em 50% auto 10%;
 }
+
+@media only screen and (max-width: 800px) {
+  .form {
+    margin: 3em 20px;
+  }
+}
+
 body {
-    background: linear-gradient(to right, var(--blue), var(--teal));
+  background: url("/assets/bg-images/bottom-right-circles.svg");
+  background-size: cover;
 }
-.container-fluid {
-    padding: 0 !important;
-    background: white    !important;
+
+.scrolled-top {
+  background: linear-gradient(to right, var(--blue), var(--teal));
 }
+
 .form-group {
-    margin: 0.3em 0;
-    display:flex;
-    flex-direction: column;
+  margin: 0.3em 0;
+  display: flex;
+  flex-direction: column;
 }
+
 input:not([type="submit"]),
 textarea {
-    border: 3px solid var(--blue) !important;
+  border: 3px solid var(--blue) !important;
 }
+
 input:not(:last-of-type) {
-    margin-right: 5px;
+  margin-right: 5px;
 }
+
 .feature-title {
-    margin-bottom: 1em !important;
+  margin-bottom: 1em !important;
 }
+
 .input-group:not(:last-of-type) {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
