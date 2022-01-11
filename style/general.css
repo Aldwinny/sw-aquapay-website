@@ -26,6 +26,16 @@ a.navbar-brand {
   margin-left: 6.5em;
 }
 
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .hidden {
+    display: inline-block;
+  }
+}
+
 nav .website-name {
   line-height: 1.3em;
 }
