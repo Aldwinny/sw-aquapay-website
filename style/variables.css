@@ -5,9 +5,12 @@
   --default-font: "Inter", sans-serif;
   --water-wonderland: "Druk Text Wide Web Medium";
 
+  --dark-blue: #0b2251;
   --blue: #0b7fb5;
   --teal: #1c8184;
   --cyan: #5ce7ec;
+
+  --hover-dark-blue: #0b2251de;
 
   --btn-active-blue: #0774a7;
   --btn-hover-blue: #0b7fb5cb;
