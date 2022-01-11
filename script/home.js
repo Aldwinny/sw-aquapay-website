@@ -1,16 +1,6 @@
 // Script will assume that the image/background is equal to the carousel item
 
-let backgrounds = [
-  "/assets/bg-images/dam1.jpg",
-  "/assets/bg-images/Water1.jpg",
-];
-
-function preload() {
-  for (let i = 0; i < backgrounds.length; i++) {
-    let image = new Image();
-    image.src = backgrounds[i];
-  }
-}
+let backgrounds = ["/assets/bg-images/homepage_1.jpg"];
 
 function changeBackground(adjustment) {
   let body = document.body.style;
@@ -44,5 +34,3 @@ function activeIndex(adjustment) {
 
   return index;
 }
-
-preload();
