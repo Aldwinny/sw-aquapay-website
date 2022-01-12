@@ -1,6 +1,7 @@
 @import url("variables.css");
 
 body {
+  transition-duration: 100ms;
   background: linear-gradient(to right, var(--blue), var(--teal));
 }
 
@@ -11,12 +12,25 @@ body {
   width: clamp(25vh, 25vw, 25em);
 }
 
-header > div {
-  height: 60vh;
+nav {
+  background: transparent;
 }
 
-header div:last-child {
-  margin: 5%;
+nav.hasimage {
+  background: rgba(0, 0, 0, 0.5) !important;
+  padding-bottom: 10px !important;
+}
+
+header {
+  margin-top: 1%;
+}
+
+.head-content {
+  height: 70vh;
+}
+
+.head-content > :not(img) {
+  padding: 5%;
 }
 
 header p {
@@ -34,8 +48,60 @@ header button {
   border-radius: 20px;
 }
 
+header a {
+  transition-duration: 100ms;
+
+  text-decoration: none;
+  color: var(--blue) !important;
+  background-color: var(--cyan);
+  font-weight: 700;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 20px;
+}
+
+header a:hover {
+  background-color: var(--btn-hover-cyan);
+}
+
+header a:active {
+  background-color: var(--btn-active-cyan);
+}
+
 @media only screen and (max-width: 700px) {
-  header div {
+  header .head-content {
     text-align: center;
   }
+}
+
+div.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 0 20px;
+  color: #fff;
+}
+
+h1,
+h3 {
+  text-shadow: 2px 2px 4px #000;
+}
+
+h1.header-title {
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 40px;
+  font-size: 3.5em; /* Fallback */
+  font-size: clamp(1.5em, 4vw, 3.5em);
+}
+
+h3.header-description {
+  text-align: center;
+  padding: 0;
+  margin: 0 11vw;
+  font-weight: 100;
+  font-size: 1em; /* Fallback */
+  font-size: clamp(0.5em, 3vw, 1.2em);
 }

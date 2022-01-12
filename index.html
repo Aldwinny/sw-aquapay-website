@@ -25,59 +25,84 @@
     <title>AquaPay | Home</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="ms-auto">
-        <a href="index.html" class="navbar-brand">
-          <img src="/assets/Aquapay_Logo.svg" alt="Logo" />
-          AquaPay
-        </a>
-      </div>
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarServices"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarServices">
-            <li><a class="dropdown-item" href="payment.html">Pay Now</a></li>
-            <li><a class="dropdown-item" href="#">Service 2</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="ri-user-3-line"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <!-- Navigation -->
+    <script src="script/importer.js"></script>
+    <script>
+      HTMLImporter.import("template/navigation.html");
+    </script>
+
+    <!-- Carousel header -->
     <header>
-      <div class="d-flex flex-wrap justify-content-center align-items-center">
-        <img
-          src="/assets/graphics/water-droplet-light.svg"
-          class="home-image"
-          alt="blue water droplet"
-        ></svg>
-        <div>
-          <p>Pay your water bills without hassle</p>
-          <button>Start Now</button>
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center head-content"
+            >
+              <img
+                src="/assets/graphics/water-droplet-light.svg"
+                class="home-image"
+                alt="blue water droplet"
+              />
+              <div>
+                <p>Pay your water bills without hassle</p>
+                <a href="#">Start Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="head-content article">
+              <h1 class="header-title">
+                WEEKLY MAINTENANCE SCHEDULE:<br />DECEMBER 20 TO 24, 2021
+              </h1>
+              <h3 class="header-description">
+                Below are the scheduled maintenance activities of Maynilad from
+                December 20, 2021 until December 24, 2021. These activities are
+                being done as part of the company's continuous effort to improve
+                water services in the West Zone. Affected customers are
+                encouraged to store.
+              </h3>
+            </div>
+          </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          onclick="changeBackground(-1)"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          onclick="changeBackground(1)"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </header>
+
     <!-- Bootstrap Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="script/home.js"></script>
+
+    <!-- Additional fun stuff -->
+    <script>
+      $("#header-carousel").on("slide.bs.carousel", function () {
+        changeBackground(1);
+      });
+    </script>
   </body>
 </html>
