@@ -6,7 +6,7 @@
 }
 
 body {
-  font-weight: 300;
+  font-weight: 300 !important;
   background: linear-gradient(to right, var(--blue), var(--teal));
 }
 
@@ -42,7 +42,7 @@ nav .website-name {
 
 .title {
   margin-top: 15px;
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 700;
 }
 
@@ -90,6 +90,10 @@ a.navbar-brand,
 
 .dropdown-item {
   padding: 0.5em 1em !important;
+}
+.dropdown-item:active {
+  color: var(--dark-blue) !important;
+  background-color: var(--cyan) !important;
 }
 
 .dropdown-menu-center {
@@ -166,6 +170,16 @@ footer .copyright {
   font-size: 0.85em;
 }
 
+/* Remove default outline on focus */
+.form-select:focus,
+.form-select:active,
+.form-control:focus,
+.form-control:active {
+    outline: 0 !important;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+}
+
 /*--- Responsive ---*/
 
 @media only screen and (max-width: 1024px) {
@@ -197,6 +211,7 @@ footer .copyright {
   }
 
   .nav-link {
+    color: inherit;
     padding-left: 2em !important;
   }
 
@@ -214,8 +229,8 @@ footer .copyright {
   /* Footer */
 
   footer {
-    position: absolute;
-    bottom: 0;
+
+    width: 100%;
     padding: 0.3em 1em 0.9em;
   }
 
