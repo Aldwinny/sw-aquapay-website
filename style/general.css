@@ -79,6 +79,7 @@ a.navbar-brand,
 .dropdown-menu {
   padding: 0 !important;
   border-radius: 0.5em !important;
+  z-index: 99;
 }
 
 .dropdown-menu li:first-of-type a {
