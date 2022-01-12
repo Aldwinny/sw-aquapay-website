@@ -143,6 +143,7 @@ footer {
   background: var(--cyan);
   margin-top: 1em;
   padding: 1em 3.5em 1.1em;
+  width: 100%;
 }
 
 footer img {
