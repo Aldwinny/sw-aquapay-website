@@ -28,74 +28,69 @@
     <script>
         HTMLImporter.import("template/navigation.html");
     </script>
-    
-    <!-- Main Content
-        
-        confirm
-        amount due
-        amt paid
-        ---
-        thank you
-        ---
-        receipt
-        
-        bootstrap tabs
-    -->
+
     <main>
         <div class="accordion-wrapper">
             <h1 class="page-title">Pay Now</h1>
-            
-            
             <ul>
-                <li>
+                <li class="step-one active">
                     <div class="section-title">
                         <h4>Step 1</h4>
                     </div>
                     <div class="section-content">
-                        <h4>Total Amount Due</h4>
+                        <p><b>Total Amount Due</b></p>
                         <h1>₱950.00</h1>
                         <p>Due Date: <span class="due-date">01-15-2022</span></p>
                         <div class="form-group">
-                            <label class="form-label">Enter Amount to pay:</label>
+                            <label class="form-label">Enter Amount to Pay:</label>
                             <div class="input-group">
                                 <input type="number" class="form-control" min="1">
+                                <button type="submit" class="blue-btn"><i class="ri-arrow-right-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="step-two">
+                    <div class="section-title">
+                        <h4>Step 2</h4>
+                    </div>
+                    <div class="section-content">
+                        <div>
+                            <div class="info">
+                                <i>Total Amount Due</i>
+                                ₱950.00
+                            </div>
+                            <div class="info">
+                                <i>Amount Entered</i>
+                                ₱950.00
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Select Payment Method</label>
+                            <div class="input-group">
+                                <select class="form-select">
+                                    <option value="gcash">GCash</option>
+                                    <option value="paymaya">PayMaya</option>
+                                    <option value="credit">Credit Card</option>
+                                    <option value="debit">Debit Card</option>
+                                </select>
                                 <button type="submit" class="blue-btn">Enter</button>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="active">
-                    <div class="section-title">
-                        <h4>Step 2</h4>
-                    </div>
-                    <div class="section-content">
-                        <p>Total Amount Due</p>
-                        <p>₱950.00</p>
-                        <p>Total Amount Entered</p>
-                        <p>₱950.00</p>
-                        <div class="form-group">
-                            <label class="form-label">Select Payment Method</label>
-                            <select class="form-select">
-                                <option value="gcash">GCash</option>
-                                <option value="paymaya">PayMaya</option>
-                                <option value="card">Credit Card</option>
-                            </select>
-                        </div>
-                    </div>
-                </li>
-                <li>
+                <li class="step-three">
                     <div class="section-title">
                         <h4>Step 3</h4>
                     </div>
                     <div class="section-content">
                         <i class="ri-checkbox-circle-fill"></i>
-                        <p>Transaction successful.</p>
+                        <p><b>Transaction successful!</b></p>
                         <p>Thank you for using our service.</p>
-                        <p> <a href="receipt.html">Click here for your receipt.</a></p>
+                        <p><a href="receipt.html">Click here for your receipt.</a></p>
                     </div>
                 </li>
             </ul>
-            
         </div>
     </main>
     
