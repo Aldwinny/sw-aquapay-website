@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/Aquapay_Logo.svg" />
     <link rel="stylesheet" href="/style/general.css" />
-    <link rel="stylesheet" href="/style/home.css" />
-    <link rel="stylesheet" href="/style/about.css" />
+    <link rel="stylesheet" href="/style/contact.css" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -32,37 +31,40 @@
       HTMLImporter.import("template/navigation.html");
     </script>
 
-    <section class="showcase">
-      <video
-        src="/assets/bg-images/Dam_Vid.mp4"
-        type="video/mp4"
-        muted
-        loop
-        autoplay
-      ></video>
-      <div class="overlay"></div>
-      <div class="text">
-        <h2>WATER WONDERLAND</h2>
-        <h3>WATERWORKS AND SANITATION SOLUTIONS</h3>
-        <p>
-          Water Wonderland aims to give filipino clean and accessible supply of
-          water in every household blah blah blah.
-        </p>
-        <a href="index.html">HOME</a>
+    <div class="contact">
+      <h3 class="feature-title">Contact Us</h3>
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'location')"
+          id="defaultOpen"
+        >
+          Location
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'contact_us')">
+          Contact Us
+        </button>
       </div>
-      <ul class="social">
-        <li>
-          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
-        </li>
-      </ul>
-    </section>
 
+      <div id="location" class="tabcontent">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5310646021226!2d121.05953311527915!3d14.625768980379434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b796aecb8763%3A0xaa026ea7350f82e7!2sTechnological%20Institute%20of%20the%20Philippines%20-%20Quezon%20City!5e0!3m2!1sen!2sph!4v1642003033153!5m2!1sen!2sph"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div id="contact_us" class="tabcontent">
+        <b>Water Wonderland Utility, Inc.</b>
+        <br />938 Aurora Boulevard, Cubao, Quezon City <br />Tel. Nos. (+632)
+        8911-0964 / (+632) 8912-1573 <br />E-mail: waterwonderland@contact.ph
+      </div>
+    </div>
+
+    <!-- Footer -->
     <script>
       HTMLImporter.import("template/footer.html");
     </script>
@@ -74,5 +76,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/script/general.js"></script>
+    <script src="script/contact.js"></script>
   </body>
 </html>
