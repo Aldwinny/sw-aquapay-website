@@ -73,3 +73,42 @@ label {
 .blue-btn:hover {
     color: white;
 }
+
+@media only screen and (max-width: 800px) {
+    .form {
+      margin: 3em 20px;
+    }
+  }
+
+  .scrolled-top {
+    background: linear-gradient(to right, var(--blue), var(--teal));
+  }
+
+  body {
+    background: url("/assets/bg-images/bottom-right-circles.svg");
+    background-size: cover;
+  }
+
+  .form-group {
+    margin: 0.3em 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input:not([type="submit"]),
+  textarea {
+    border: 3px solid var(--blue) !important;
+  }
+  
+  input:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  
+  .feature-title {
+    margin-bottom: 1em !important;
+  }
+  
+  .input-group:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+  
