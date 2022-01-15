@@ -1,12 +1,9 @@
+body {
+  background: var(--cyan) !important;
+}
 .showcase {
-  min-height: 81vh;
-  margin: 0 100px;
   background: #111;
   transition: 0.5s;
-}
-
-.showcase div.text {
-  margin: 22vh 0;
 }
 
 .showcase video {
@@ -30,28 +27,31 @@
 
 .text {
   position: relative;
+  margin: 10% 5vw;
 }
 
 .text h2 {
-  font-size: 5em;
+  font-size: 2.5em; /* Fallback */
+  font-size: clamp(2.5em, 6vw, 5em);
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 .text h3 {
-  font-size: 2em;
+  font-size: 2em; /* Fallback */
+  font-size: clamp(1.2em, 2vw, 2em);
   font-weight: 700;
   color: #fff;
   line-height: 2em;
   text-transform: uppercase;
 }
 .text p {
-  font-size: 1.1em;
+  font-size: 1.1em; /* Fallback */
+  font-size: clamp(1em, 1.5vw, 1.2em);
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
-  max-width: 700px;
 }
 .text a {
   display: inline-block;
@@ -73,6 +73,8 @@
 .social {
   display: flex;
   align-items: center;
+  position: relative;
+  margin: 0 0 8vh 5vw;
 }
 .social li {
   width: 60px;
@@ -94,14 +96,16 @@
     background: linear-gradient(to right, var(--blue), var(--teal));
   }
 
+  .text {
+    margin: 20vh 0;
+  }
+
   .showcase,
-  .showcase header {
-    padding: 40px;
-  }
-  .text h2 {
-    font-size: 3em;
-  }
-  .text h3 {
-    font-size: 2em;
+  .showcase header,
+  .social {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 20px 0;
   }
 }
