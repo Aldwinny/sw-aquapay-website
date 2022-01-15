@@ -18,18 +18,25 @@ body {
 }
 
 .form-group {
-  margin: 0.3em 0;
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 0.3em;
 }
 
-input:not([type="submit"]),
-textarea {
-  border: 3px solid var(--blue) !important;
+.form-control {
+  border-color: var(--blue) !important;
+  border-radius: 0.5em !important;
+}
+.form-control:hover {
+  border-color: var(--btn-hover-blue) !important;
+}
+.form-control:focus {
+  border-color: var(--btn-active-blue) !important;
 }
 
 input:not(:last-of-type) {
-  margin-right: 5px;
+  margin-right: 0.3em;
 }
 
 .feature-title {
@@ -38,4 +45,20 @@ input:not(:last-of-type) {
 
 .input-group:not(:last-of-type) {
   margin-bottom: 5px;
+}
+
+.feature-title {
+  margin: 0 !important;
+  font-weight: 700;
+}
+
+.form-label {
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+.blue-btn {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin: 1.3em 0 2em;
 }
