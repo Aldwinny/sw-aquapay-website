@@ -1,56 +1,44 @@
-@media only screen and (max-width: 800px) {
-    .form {
-      margin: 3em 20px;
-    }
-}
-.scrolled-top {
-    background: linear-gradient(to right, var(--blue), var(--teal));
-}
-
 body {
-    background: url("/assets/bg-images/bottom-right-circles.svg");
-    background-size: cover;
-}
-.contact {
-    margin: 3em 50% auto 10%;
-}
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
-  float: left;
-  background-color: #f1f1f1;
+  background: #fff;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
+main {
+  margin-bottom: 4em;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.feature-title {
+  margin: 2em 0 1.2em !important;
+  font-weight: 700;
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
+.contact-us {
+  width: 50vw;
+  margin-bottom: 1.2em;
+  background: #eee;
+  padding: 1.2em;
+  word-wrap: break-word;
+  text-align: center;
+  border-radius: 0.5em;
 }
 
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border-left: none;
+iframe {
+  width: 50vw;
+  height: 50vh;
+  border-radius: 0.5em;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .contact-us,
+  iframe {
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .contact-us,
+  iframe {
+    width: 95vw;
+  }
 }
