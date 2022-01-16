@@ -55,7 +55,18 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   width: 20vw;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .form {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .form-group-short {
+    width: 75%;
+  }
 }
